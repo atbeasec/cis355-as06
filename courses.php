@@ -98,13 +98,13 @@ function printSemester($term) {
     // note: printSemester() is only called when user has not entered anything in entry form
     // print all CIS courses for semester
     $string = "https://api.svsu.edu/courses?prefix=CIS&term=$term";
-    printListing($string, $dayOfWeek);
+    printListing($string, $day);
     // print all CS courses for semester
     $string = "https://api.svsu.edu/courses?prefix=CS&term=$term";
-    printListing($string, $dayOfWeek);
+    printListing($string, $day);
     // print all CSIS courses for semester
     $string = "https://api.svsu.edu/courses?prefix=CSIS&term=$term";
-    printListing($string, $dayOfWeek);
+    printListing($string, $day);
 
 }
 function Compare($x, $y){
